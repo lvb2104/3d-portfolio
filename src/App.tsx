@@ -1,9 +1,38 @@
+import { BrowserRouter } from 'react-router-dom';
+import {
+    About,
+    Contact,
+    Experience,
+    Feedbacks,
+    Hero,
+    Navbar,
+    StarsCanvas,
+    Tech,
+    Works,
+} from './components';
 const App = () => {
-  return (
-    <div>
-      3D Portfolio
-    </div>
-  )
-}
+    return (
+        <BrowserRouter>
+            <div className='relative z-0 bg-primary'>
+                <header className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+                    <Navbar />
+                </header>
+                <main>
+                    <Hero />
+                    <About />
+                    <Experience />
+                    <Tech />
+                    <Works />
+                    <Feedbacks />
+                    <div className='relative z-0'>
+                        <Contact />
+                        <StarsCanvas />
+                    </div>
+                </main>
+                <footer></footer>
+            </div>
+        </BrowserRouter>
+    );
+};
 
-export default App
+export default App;
