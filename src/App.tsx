@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
     About,
     Contact,
@@ -31,8 +31,8 @@ const App = () => {
                     </div>
                 </main>
                 <footer></footer>
+                <SpeedInsights />
             </div>
-            <SpeedInsights />
         </BrowserRouter>
     );
 };
