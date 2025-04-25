@@ -17,7 +17,6 @@ import {
     git,
     figma,
     docker,
-    meta,
     uit,
     outlier,
     aws,
@@ -149,7 +148,7 @@ const experiences = [
         company_name: 'AWS Study Group',
         icon: aws,
         iconBg: '#fff',
-        date: 'Jan 2022 - Jan 2023',
+        date: 'Feb 2025 - Present',
         points: [
             'Served as DevOps Ambassador in the AWS Study Group.',
             'Guided peers in understanding and utilizing AWS cloud services.',

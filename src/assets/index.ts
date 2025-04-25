@@ -21,7 +21,6 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import meta from './company/meta.png';
 import aws from './company/aws.png';
 import uit from './company/uit.png';
 import outlier from './company/outlier.jpg';
@@ -52,7 +51,6 @@ export {
     tailwind,
     typescript,
     threejs,
-    meta,
     aws,
     uit,
     outlier,
