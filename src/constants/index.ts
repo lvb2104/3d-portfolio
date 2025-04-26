@@ -221,7 +221,7 @@ const projects = [
         source_code_link: 'https://github.com/',
     },
     {
-        name: 'Trip Guide',
+        name: 'Hybrid CI/CD Pipeline',
         description:
             'Hybrid cloud CI/CD pipeline that automates the build and deployment of containerized applications across on-premises and AWS environments using GitLab CI, Jenkins, Terraform, and Harbor Registry.',
         tags: [
