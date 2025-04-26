@@ -3,7 +3,7 @@
 import {
     devops,
     backend,
-    cloud,
+    frontend,
     web,
     javascript,
     typescript,
@@ -19,9 +19,9 @@ import {
     uit,
     outlier,
     aws,
-    carrent,
-    jobit,
-    tripguide,
+    portfolio,
+    hotel,
+    pipeline,
 } from '../assets';
 
 export const navLinks = [
@@ -45,16 +45,16 @@ const services = [
         icon: web,
     },
     {
+        title: 'Frontend Developer',
+        icon: frontend,
+    },
+    {
         title: 'Backend Developer',
         icon: backend,
     },
     {
         title: 'DevOps Engineer',
         icon: devops,
-    },
-    {
-        title: 'Cloud Engineer',
-        icon: cloud,
     },
 ];
 
@@ -153,7 +153,7 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+            'I thought it was impossible to make a website as beautiful as our product, but Moda proved me wrong.',
         name: 'Sara Lee',
         designation: 'CFO',
         company: 'Acme Co',
@@ -161,7 +161,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
+            "I've never met a web developer who truly cares about their clients' success like Moda does.",
         name: 'Chris Brown',
         designation: 'COO',
         company: 'DEF Corp',
@@ -169,7 +169,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            "After Moda optimized our website, our traffic increased by 50%. We can't thank them enough!",
         name: 'Lisa Wang',
         designation: 'CTO',
         company: '456 Enterprises',
@@ -179,16 +179,16 @@ const testimonials = [
 
 const projects = [
     {
-        name: 'Car Rent',
+        name: 'Portfolio',
         description:
-            'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+            'Interactive portfolio website that showcases projects, technical skills, and experience in a dynamic 3D environment, built using React, Three.js, and Tailwind CSS to provide an engaging and modern user experience.',
         tags: [
             {
                 name: 'react',
                 color: 'blue-text-gradient',
             },
             {
-                name: 'mongodb',
+                name: 'threejs',
                 color: 'green-text-gradient',
             },
             {
@@ -196,13 +196,13 @@ const projects = [
                 color: 'pink-text-gradient',
             },
         ],
-        image: carrent,
+        image: portfolio,
         source_code_link: 'https://github.com/',
     },
     {
-        name: 'Job IT',
+        name: 'Hotel Booking App',
         description:
-            'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+            'Web application that enables users to search for available rooms, view detailed room information, make reservations seamlessly, and manage their bookings through a user-friendly interface.',
         tags: [
             {
                 name: 'react',
@@ -213,32 +213,32 @@ const projects = [
                 color: 'green-text-gradient',
             },
             {
-                name: 'scss',
+                name: 'nestjs',
                 color: 'pink-text-gradient',
             },
         ],
-        image: jobit,
+        image: hotel,
         source_code_link: 'https://github.com/',
     },
     {
         name: 'Trip Guide',
         description:
-            'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+            'Hybrid cloud CI/CD pipeline that automates the build and deployment of containerized applications across on-premises and AWS environments using GitLab CI, Jenkins, Terraform, and Harbor Registry.',
         tags: [
             {
-                name: 'nextjs',
+                name: 'aws',
                 color: 'blue-text-gradient',
             },
             {
-                name: 'supabase',
+                name: 'jenkins',
                 color: 'green-text-gradient',
             },
             {
-                name: 'css',
+                name: 'terraform',
                 color: 'pink-text-gradient',
             },
         ],
-        image: tripguide,
+        image: pipeline,
         source_code_link: 'https://github.com/',
     },
 ];

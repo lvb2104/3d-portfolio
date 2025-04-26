@@ -10,7 +10,9 @@ import {
     StarsCanvas,
     Tech,
     Works,
+    Footer, // Import Footer
 } from './components';
+
 const App = () => {
     return (
         <BrowserRouter>
@@ -30,7 +32,9 @@ const App = () => {
                         <StarsCanvas />
                     </div>
                 </main>
-                <footer></footer>
+                <footer>
+                    <Footer />
+                </footer>
                 <SpeedInsights />
             </div>
         </BrowserRouter>

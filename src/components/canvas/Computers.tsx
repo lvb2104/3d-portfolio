@@ -11,29 +11,30 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
         <mesh>
             <hemisphereLight intensity={Math.PI} groundColor='black' />
             <spotLight
-            position={[-20, 50, 10]} // Adjust light position for better shadow angle
-            angle={0.12}
-            penumbra={1}
-            intensity={1}
-            castShadow // This light will cast shadows
-            shadow-mapSize={1024}
+                position={[-20, 50, 10]} // Adjust light position for better shadow angle
+                angle={0.12}
+                penumbra={1}
+                intensity={1}
+                castShadow // This light will cast shadows
+                shadow-mapSize={1024}
             />
             <pointLight intensity={3} />
             <primitive
-            object={computer.scene}
-            scale={isMobile ? 0.7 : 0.75}
-            position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-            rotation={[-0.01, -0.2, -0.1]}
-            castShadow // The computer model should cast a shadow
+                object={computer.scene}
+                scale={isMobile ? 0.7 : 0.75}
+                position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+                rotation={[-0.01, -0.2, -0.1]}
+                castShadow // The computer model should cast a shadow
             />
             {/* Add a plane to receive the shadow */}
             <mesh
-            receiveShadow // This plane will receive shadows
-            rotation={[-Math.PI / 2, 0, 0]} // Rotate the plane to be horizontal
-            position={[0, -3.25, -1.5]} // Position it slightly below the computer
+                receiveShadow // This plane will receive shadows
+                rotation={[-Math.PI / 2, 0, 0]} // Rotate the plane to be horizontal
+                position={[0, -3.25, -1.5]} // Position it slightly below the computer
             >
-            <planeGeometry args={[10, 10]} /> {/* Adjust size as needed */}
-            <shadowMaterial opacity={0.5} /> {/* Material specifically for receiving shadows */}
+                <planeGeometry args={[10, 10]} /> {/* Adjust size as needed */}
+                <shadowMaterial opacity={0.5} />{' '}
+                {/* Material specifically for receiving shadows */}
             </mesh>
         </mesh>
     );

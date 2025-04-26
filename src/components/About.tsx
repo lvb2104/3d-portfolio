@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { styles } from '../styles';
@@ -65,7 +66,7 @@ const About = () => {
                 right thing and do things right."
             </motion.p>
 
-            <div className='mt-20 flex flex-wrap gap-10'>
+            <div className='mt-20 flex flex-wrap gap-10 justify-center items-center'>
                 {services.map((service, index) => (
                     <ServiceCard
                         key={service.title}

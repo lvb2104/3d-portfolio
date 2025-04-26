@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import backend from './backend.png';
-import cloud from './cloud.png';
+import frontend from './frontend.png';
 import devops from './devops.png';
 import web from './web.png';
 import github from './github.png';
@@ -23,14 +23,14 @@ import aws from './company/aws.png';
 import uit from './company/uit.png';
 import outlier from './company/outlier.jpg';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import portfolio from './portfolio.png';
+import hotel from './hotel.png';
+import pipeline from './pipeline.jpeg';
 
 export {
     logo,
     backend,
-    cloud,
+    frontend,
     devops,
     web,
     github,
@@ -50,7 +50,7 @@ export {
     aws,
     uit,
     outlier,
-    carrent,
-    jobit,
-    tripguide,
+    portfolio,
+    hotel,
+    pipeline,
 };
